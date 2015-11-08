@@ -1,2 +1,3 @@
-# video_snippets
+# Videosnippets (Videoschnipsel)
+
 Videosnippet-Muster
