@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Lizenz: Creative Commons Zero 1.0 https://creativecommons.org/publicdomain/zero/1.0/ --> 
+        <meta charset="utf-8">
+        <title>Text einblenden - Transition</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <style>
+        .titledefault {
+            color: dodgerblue;
+            opacity: 1;
+            padding-top: 5%;
+            font-size: 15em;
+            }
+        .titlevisible {
+            color: dodgerblue;
+            transition: opacity 5s linear 2s;  
+            /* Transition für opacity, Dauer, Ablauf, Delay */
+            opacity: 1;
+            padding-top: 5%;
+            font-size: 15em;
+            }    
+        .titlehidden {
+            color: dodgerblue;
+            transition: opacity 0.5s linear;
+            /* Transition für opacity, Dauer, Ablauf */
+            opacity: 0;
+            padding-top: 5%;
+            font-size: 15em;
+            }
+        .starthidden {
+            visibility: hidden;
+            }
+        </style>
+        <script>
+        window.onload = function() {
+            
+            document.getElementById('start').addEventListener('click', function( event ) { 
+                
+                document.getElementById('start').className = "starthidden";
+                // Button - CSS-Klasse in starthidden ändern, Button nicht mehr sichtbar
+                document.getElementById('title').className = "titlehidden";
+                // Titel - CSS-Klasse in titlehidden ändern, Titel nicht mehr sichtbar
+                document.getElementById('title').addEventListener('transitionend', function(event) { // bei Ende der Transition
+                    document.getElementById('title').className = "titlevisible"; 
+                    // Titel - CSS-Klasse in titlevisible ändern, Titel langsam sichtbar
+                    document.getElementById('title').addEventListener('transitionend', function(event) { // bei Ende der Transition
+                       location.reload(true);   // Seite neu laden   
+                    }, false );
+                                                      
+                }, false );    
+                       
+            }, false );
+             
+        }
+        </script>
+    </head>
+    <body>
+        
+        <button id="start">Start</button>
+        <center><h1 id="title" contenteditable="true" class="titledefault">Titel</h1></center>
+ 
+    </body>
+</html>

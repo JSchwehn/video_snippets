@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- Lizenz: Creative Commons Zero 1.0 https://creativecommons.org/publicdomain/zero/1.0/ --> 
+        <meta charset="utf-8">
+        <title>Text einblenden - Animation</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <style>
+            @keyframes textfade {
+                0% {    /* Anfangszustand der Animation - Text nicht sichtbar */
+                    opacity: 0;
+                }
+                20% {
+                    opacity: 0;
+                }
+                100% {  /* Endzustand der Animation - Text sichtbar */
+                    opacity: 1;
+                }
+            }
+            #title {
+                    color: dodgerblue;  /* Schriftfarbe */
+                    opacity: 1;         
+                    padding-top: 5%;
+                    font-size: 15em;    /* Schriftgröße */
+                    animation-name: textfade; 
+                    animation-duration: 6s;     /* Dauer der Animation */
+                    animation-iteration-count: 1;  /* Anzahl der Durchläufe */
+                    animation-direction: alternate;
+                    animation-timing-function: linear;
+                    animation-delay: 2s;
+                    animation-fill-mode: none;
+                }
+        
+        </style>
+    </head>
+    <body>
+
+        <center><h1 id="title">Titel</h1></center>
+ 
+    </body>
+</html>
