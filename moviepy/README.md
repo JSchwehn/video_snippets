@@ -7,7 +7,10 @@
 
 ## moviepy - Installation
 
+```
+# Voraussetzung: Python, pip
 pip install moviepy
+```
 
 ## Anwendung
 
