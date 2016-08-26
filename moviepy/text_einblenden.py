@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Video mit Text erzeugen
+# Text einblenden (mit Hintergrund)
 
 # Einstellungen
 text = 'Text'               # Text
@@ -14,6 +14,8 @@ videohoehe = 720            # in Pixel
 videolaenge = 5             # in Sekunden   
 videodatei = 'text.ogv'     # Videodatei
 frames = 25                 # Frames pro Sekunde
+einblenden_zeit = 5         # Einblenden in Sekunden
+
 
 # Modul moviepy importieren
 from moviepy.editor import *
@@ -24,6 +26,10 @@ video = TextClip(text, bg_color=hintergrundfarbe, font=schrift, align=textpositi
 # Videolaenge bestimmen
 video = video.set_duration(videolaenge)
 
+# Textclip langsam einblenden
+# video = CompositeVideoClip([video.crossfadein(einblenden_zeit)])
+video = vfx.fadein(video,einblenden_zeit)
+
 # Videodatei schreiben
 video.write_videofile(videodatei, fps=frames)
 
@@ -31,6 +37,6 @@ video.write_videofile(videodatei, fps=frames)
 # Hilfe fuer moviepy: https://zulko.github.io/moviepy/index.html
 # Textclip - https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html#textclip
 
-# text_anzeigen.py
+# text_einblenden.py
 # Lizenz: http://creativecommons.org/publicdomain/zero/1.0/
 # Author: openscreencast.de
