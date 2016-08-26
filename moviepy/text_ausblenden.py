@@ -26,7 +26,7 @@ video = TextClip(text, bg_color=hintergrundfarbe, font=schrift, align=textpositi
 # Videolaenge bestimmen
 video = video.set_duration(videolaenge)
 
-# Textclip langsam einblenden
+# Textclip langsam ausblenden
 # video = CompositeVideoClip([video.crossfadeout(ausblenden_zeit)])
 video = vfx.fadeout(video,ausblenden_zeit)
 
