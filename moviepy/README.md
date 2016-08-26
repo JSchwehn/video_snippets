@@ -17,6 +17,12 @@ pip install moviepy
 ```
 # Videodatei mit Text erzeugen, Einstellungen sind in der Datei
 ./text_anzeigen.py
+
+# Videodatei erzeugen (Text einblenden mit Hintergrund)
+./text_einblenden.py
+
+# Videodatei erzeugen (Text ausblenden mit Hintergrund)
+./text_ausblenden.py
 ```
 
 ## Lizenz
