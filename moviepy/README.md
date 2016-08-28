@@ -44,7 +44,7 @@ pip install moviepy
 ./text_einblenden2.py
 ```
 
-[Beispiel Text einblenden)](https://www.youtube-nocookie.com/embed/DLKJqM4pidQ)
+[Beispiel Text einblenden](https://www.youtube-nocookie.com/embed/DLKJqM4pidQ)
 
 ```
 # Einstellungen sind in der Datei
