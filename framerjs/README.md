@@ -12,6 +12,9 @@
 
 # Text einblenden
 ./text_einblenden.html
+
+# Text ausblenden
+./text_ausblenden.html
 ```
 
 ## Lizenz
