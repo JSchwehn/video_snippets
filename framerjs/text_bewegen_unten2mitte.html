@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <!-- by: openscreencast.de
+         Lizenz: Creative Commons Zero 1.0 https://creativecommons.org/publicdomain/zero/1.0/ --> 
+		<meta charset="utf-8">
+		<title>Text einblenden</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="framer/framer.js"></script>
+        <!-- framerjs: https://github.com/koenbok/Framer (Lizenz: MIT https://github.com/koenbok/Framer/blob/master/LICENSE, Copyright (c) 2014 Koen Bok) -->
+	</head>
+	<body>
+		
+        <script>
+        text = new Layer({
+            width: 580,
+            height: 300,
+            backgroundColor: "white",
+            opacity: 1,
+            color: "black",
+            html: "<span>Text</span>",
+            y: Align.bottom,
+            x: Align.center
+        })
+        text.style.fontSize = "20em";
+        
+        textAnimation = new Animation({
+            layer: text,
+            properties: { y: Align.center},
+            curve: "ease-in-out",
+            time: 5,
+            delay: 1,
+            repeat: 0
+        })
+        textAnimation.start()
+        </script>
+
+	</body>
+</html>
