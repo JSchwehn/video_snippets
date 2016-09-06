@@ -10,10 +10,10 @@
 ```
 # HTML-Seiten mit Google Chrome starten, Einstellungen sind in den HTML-Dateien
 
-# Text einblenden
+# Beispiel - Text einblenden
 ./text_einblenden.html
 
-# Text ausblenden
+# Beispiel - Text ausblenden
 ./text_ausblenden.html
 ```
 
