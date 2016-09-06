@@ -12,6 +12,8 @@
 pip install moviepy
 ```
 
+Docker: https://hub.docker.com/r/dkarchmervue/moviepy/
+
 ## Anwendung
 
 ```
