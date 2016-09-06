@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
-# Video mit Text erzeugen, hineinzoomen (Text wird groesser)
+# Video mit Text erzeugen, hinauszoomen (Text wird kleiner)
 
 # Einstellungen
 text = 'Text'               # Text
 textgroesse = 150           # Textgroesse in Pixel
+textgroesse0 = 300          # Textgroesse bei 0s in Pixel
 textfarbe_r = 0             # Textfarbe R
 textfarbe_g = 0             # Textfarbe G
 textfarbe_b = 0             # Textfarbe B
@@ -27,7 +28,7 @@ import gizeh
 # Funktion um Frames zu erzeugen, t ist die Zeit beim jeweiligen Frame
 def create_frame(t):
     img = gizeh.Surface(videobreite,videohoehe,bg_color=(hgfarbe_r,hgfarbe_g,hgfarbe_b))
-    text_img = gizeh.text(text, fontfamily=schrift, fontsize=t*(textgroesse/videolaenge),
+    text_img = gizeh.text(text, fontfamily=schrift, fontsize=textgroesse0 - t*((textgroesse0-textgroesse)/videolaenge),
                fill=(textfarbe_r,textfarbe_g,textfarbe_b),
                xy=(videobreite/2,videohoehe/2), angle=winkel)
     text_img.draw(img)
@@ -43,7 +44,7 @@ video.write_videofile(videodatei, fps=frames)
 # Hilfe fuer moviepy: https://zulko.github.io/moviepy/index.html
 # Hilfe fuer gizeh: https://github.com/Zulko/gizeh
 
-# text_hineinzoomen.py
+# text_hinauszoomen.py
 # Lizenz: http://creativecommons.org/publicdomain/zero/1.0/
 # Author: openscreencast.de
 
