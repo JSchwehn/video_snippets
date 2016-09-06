@@ -17,13 +17,15 @@
             height: 300,
             backgroundColor: "white",
             opacity: 1,
-            html: "<span style='color: black; font-size: 20em'>Text</span>"
+            color: "black",
+            html: "<span>Text</span>"
         })
         text.center();
+        text.style.fontSize = "20em";
         
         textAnimation = new Animation({
             layer: text,
-            properties: { opacity: 0 },
+            properties: { opacity: 0},
             curve: "ease-in-out",
             time: 5,
             delay: 1,
