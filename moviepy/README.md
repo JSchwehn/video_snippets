@@ -15,7 +15,6 @@ pip install moviepy
 ## Anwendung
 
 ```
-# Einstellungen sind in der Datei
 # Videodatei erzeugen (Text anzeigen)
 ./text_anzeigen.py
 ```
@@ -23,7 +22,6 @@ pip install moviepy
 [Beispiel Text anzeigen](https://www.youtube-nocookie.com/embed/nVwOiZe8R7o)
 
 ```
-# Einstellungen sind in der Datei
 # Videodatei erzeugen (Text einblenden mit Hintergrund)
 ./text_einblenden.py
 ```
@@ -31,7 +29,6 @@ pip install moviepy
 [Beispiel Text einblenden mit Hintergrund](https://www.youtube-nocookie.com/embed/ZgdbK-VZk1Y)
 
 ```
-# Einstellungen sind in der Datei
 # Videodatei erzeugen (Text ausblenden mit Hintergrund)
 ./text_ausblenden.py
 ```
@@ -39,7 +36,6 @@ pip install moviepy
 [Beispiel Text ausblenden mit Hintergrund](https://www.youtube-nocookie.com/embed/rWmLBh07W3A)
 
 ```
-# Einstellungen sind in der Datei
 # Videodatei erzeugen (Text einblenden)
 ./text_einblenden2.py
 ```
@@ -47,12 +43,41 @@ pip install moviepy
 [Beispiel Text einblenden](https://www.youtube-nocookie.com/embed/DLKJqM4pidQ)
 
 ```
-# Einstellungen sind in der Datei
 # Videodatei erzeugen (Text ausblenden)
 ./text_ausblenden2.py
 ```
 
 [Beispiel Text ausblenden](https://www.youtube-nocookie.com/embed/z160uuOiFQk)
+
+```
+# Videodatei erzeugen (Text bewegen - von Oben in die Mitte)
+./text_bewegen_oben2mitte.py
+```
+
+```
+# Videodatei erzeugen (Text bewegen - von Links in die Mitte)
+./text_bewegen_links2mitte.py
+```
+
+```
+# Videodatei erzeugen (Text bewegen - von Rechts in die Mitte)
+./text_bewegen_rechts2mitte.py
+```
+
+```
+# Videodatei erzeugen (Text bewegen - von Unten in die Mitte)
+./text_bewegen_unten2mitte.py
+```
+
+```
+# Videodatei erzeugen (Text hineinzoomen - Text wird grösser)
+./text_hineinzoomen.py
+```
+
+```
+# Videodatei erzeugen (Text hinauszoomen - Text wird kleiner)
+./text_hinauszoomen.py
+```
 
 
 ## Lizenz
