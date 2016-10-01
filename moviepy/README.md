@@ -3,7 +3,7 @@
 ## moviepy
 
 * [moviepy - User Guide](https://zulko.github.io/moviepy/index.html)
-* [moviepy](https://github.com/Zulko/moviepy)
+* [moviepy](https://github.com/Zulko/moviepy) by [Zulko](https://github.com/Zulko) Lizenz: [MIT](https://github.com/Zulko/moviepy/blob/master/LICENCE.txt)
 
 ## moviepy - Installation
 
